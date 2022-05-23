@@ -1,0 +1,10 @@
+{% extends 'components/layout.html' %}
+{% block pic %}
+<img src="/../static/Images/DSC08471.jpeg" class="img-fluid" alt="...">
+{%endblock pic%}
+{% block content %}
+<h3>{{ g }}</h3>
+{% for duty in list_of_duties %}
+<h5>{{ duty }}!</h5>
+{% endfor %}
+{% endblock content %}

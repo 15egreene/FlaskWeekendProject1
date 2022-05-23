@@ -1,0 +1,17 @@
+{% extends 'components/layout.html' %}
+{%block form%}
+<div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Enter Your Player's full name here! :</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+{%endblock form%}
+{% block content %}
+<table> 
+    <tr>
+        <th>Player:</th>
+        <td>{{ Name }}</td>
+    </tr> 
+    <th>Team:</th>
+    <td>{{ Team }}</td>
+</table>
+{% endblock content %}
