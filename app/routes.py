@@ -30,6 +30,3 @@ def players():
     }
     return render_template('f1.html', **context)
 
-@app.route('/bull')
-def bs():
-    return render_template('bs.html')
