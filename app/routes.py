@@ -14,7 +14,7 @@ def about():
     return render_template('about.html')
 
 
-@app.route('/api-call')
+@app.route('/api-call', methods=['GET', 'POST'])
 def players():
     data = r.get('https://www.balldontlie.io/api/v1/players?search=')
     if data.status_code == 200:
